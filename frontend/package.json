@@ -10,13 +10,16 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@unform/core": "^2.1.0",
+    "@unform/web": "^2.1.0",
     "polished": "^3.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.0",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "yup": "^0.28.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,6 +44,7 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.0",
+    "@types/yup": "^0.26.37",
     "@typescript-eslint/eslint-plugin": "^2.29.0",
     "@typescript-eslint/parser": "^2.29.0",
     "eslint": "^6.8.0",
