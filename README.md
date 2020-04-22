@@ -77,6 +77,6 @@ Versão atualizada do GoBarber com mudanças desde o layout às tecnologias util
 ## 📸 Interfaces da aplicação
   > Em desenvolvimento
 
-  *Páginas de Login e de Cadastro*
-  <img src="https://user-images.githubusercontent.com/11545976/79991191-5e41a300-8488-11ea-9374-1a2a75278e75.gif" />
+*Páginas de Login e de Cadastro*
+<img src="https://user-images.githubusercontent.com/11545976/79991191-5e41a300-8488-11ea-9374-1a2a75278e75.gif" />
  
