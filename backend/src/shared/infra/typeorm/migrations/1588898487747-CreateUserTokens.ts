@@ -40,7 +40,7 @@ export default class CreateUserTokens1588898487747
             name: 'TokenUser',
             referencedTableName: 'users',
             referencedColumnNames: ['id'],
-            columnNames: ['id'],
+            columnNames: ['user_id'],
             onDelete: 'CASCADE',
             onUpdate: 'CASCADE',
           },
