@@ -91,7 +91,12 @@ Nesta versão, foram aplicados padrões de arquitetura e boas práticas de progr
  - polished
  - react-spring
  - yup
+ - celebrate/joi
+ - dotenv
+ - class-transformer
  - jest/ts-jest
+ - rate-limiter-flexible
+ - redis
 
 ---
 
@@ -103,7 +108,23 @@ Nesta versão, foram aplicados padrões de arquitetura e boas práticas de progr
 
 ## 💻 Instruções para o back end
 
-  Primeiramente você precisará criar um arquivo contendo as informações de acesso ao seu banco de dados. Esta aplicação foi desenvolvida utilizando o **Postgres**. Crie um arquivo chamado *ormconfig.json* na pasta `backend` e preencha conforme o arquivo-modelo *ormconfig.example.json*.
+  Começaremos criando as instâncias dos nossos bancos de dados. Para esse projeto, o **docker** foi utilizado. Abaixo, seguem os comandos para criar os containers e inicializar as instâncias:
+
+  ```bash
+    # Criando container com instância do postgres
+    docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
+
+    # Criando container com instância do mongo
+    docker run --name mongodb -p 27017:27017 -d -t mongo
+
+    # Criando container com instância do redis
+    docker run --name redis -p 6379:6379 -d -t redis:alpine
+
+    # Inicializando as instâncias
+    docker start postgres mongodb redis
+  ```
+
+  Primeiramente, você precisará criar um arquivo contendo as informações de acesso ao seu banco de dados. Esta aplicação foi desenvolvida utilizando o **Postgres**. Crie um arquivo chamado *ormconfig.json* na pasta `backend` e preencha conforme o arquivo-modelo *ormconfig.example.json*.
   
  ```bash
   # Acessar a pasta do back end
