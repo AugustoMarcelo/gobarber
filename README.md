@@ -92,6 +92,8 @@ Nesta versão, foram aplicados padrões de arquitetura e boas práticas de progr
     - class-transformer
     - jest/ts-jest
     - rate-limiter-flexible
+    - Amazon SES
+    - Amazon S3
 
   - **Front end**
     - react
@@ -142,21 +144,23 @@ Nesta versão, foram aplicados padrões de arquitetura e boas práticas de progr
     docker start postgres mongodb redis
   ```
 
-  Primeiramente, você precisará criar um arquivo contendo as informações de acesso ao seu banco de dados. Esta aplicação foi desenvolvida utilizando o **Postgres**. Crie um arquivo chamado *ormconfig.json* na pasta `backend` e preencha conforme o arquivo-modelo *ormconfig.example.json*.
+  Primeiramente, você precisará criar um arquivo contendo as informações de acesso ao seu banco de dados. Esta aplicação foi desenvolvida utilizando o **Postgres** e **MongoDB**. Crie um arquivo chamado *ormconfig.json* na pasta `backend` e preencha conforme o arquivo-modelo *ormconfig.example.json*. 
   
- ```bash
-  # Acessar a pasta do back end
-  cd backend
+  ```bash
+    # Acessar a pasta do back end
+    cd backend
 
-  # Baixar as dependências
-  yarn
+    # Baixar as dependências
+    yarn
 
-  # Executar as migrations
-  yarn typeorm migration:run
+    # Executar as migrations
+    yarn typeorm migration:run
 
-  # Inicializar o servidor de desenvolvimento
-  yarn dev:server
- ```
+    # Inicializar o servidor de desenvolvimento
+    yarn dev:server
+  ```
+
+  Será necessário criar também um arquivo *.env*, que conterá as variáveis de ambiente. Use *.env.example* como modelo.
 
 ---
 
