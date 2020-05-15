@@ -14,8 +14,8 @@ Nesta versão, foram aplicados padrões de arquitetura e boas práticas de progr
 - 💻 [Instruções para o back end](#-instruções-para-o-back-end)
 - 💻 [Instruções para o front end](#-instruções-para-o-front-end)
 - 📱 [Instruções para o mobile](#-instruções-para-o-mobile)
+- 🐞 [Executandos testes](#-executando-testes)
 - 📸 [Interfaces da aplicação](#-interfaces-da-aplicação)
-
 
 ---
 
@@ -76,28 +76,46 @@ Nesta versão, foram aplicados padrões de arquitetura e boas práticas de progr
 ---
 
 ## ⚙ Tecnologias
- - NodeJS, ReactJS e React Native (back end, front end e mobile, respectivamente)
- - Typescript
- - Docker
+  - **Back end**
+    - nodeJS
+    - express
+    - typescript
+    - typeorm
+    - postgres
+    - mongodb
+    - redis
+    - uuidv4
+    - date-fns
+    - multer
+    - celebrate/joi
+    - dotenv
+    - class-transformer
+    - jest/ts-jest
+    - rate-limiter-flexible
 
- - typeorm
- - express
- - uuidv4
- - date-fns
- - multer
- - axios
- - react-router-dom
- - styled-components
- - polished
- - react-spring
- - yup
- - celebrate/joi
- - dotenv
- - class-transformer
- - jest/ts-jest
- - rate-limiter-flexible
- - redis
+  - **Front end**
+    - react
+    - typescript
+    - axios
+    - react-router-dom
+    - styled-components
+    - polished
+    - react-spring
+    - yup
 
+  - **Mobile**
+    - react-native
+    - react-native-vector-icons
+    - @react-native-community/async-storage
+    - @react-navigation/native
+    - unform (2.0)
+    - axios
+    - styled-components
+    - yup
+
+  - **Outras tecnologias**
+    - Docker
+    
 ---
 
 > Inicialmente precisamos clonar o repositório para ter acesso a todas as pastas
@@ -146,16 +164,26 @@ Nesta versão, foram aplicados padrões de arquitetura e boas práticas de progr
  
   Após executar o passo anterior e garantir que o back end está rodando, você poderá inicializar o front end:
 
- ```bash
-  # Acessar a apsta do front end
-  cd frontend
+  ```bash
+    # Acessar a apsta do front end
+    cd frontend
 
-  # Baixar as dependências
-  yarn
+    # Baixar as dependências
+    yarn
 
-  # Inicializar a aplicação
-  yarn start
- ```
+    # Inicializar a aplicação
+    yarn start
+  ```
+
+## 🐞 Executando testes
+
+  ```bash
+    # Acessar a pasta do back end
+    cd backend
+
+    # Executando testes
+    yarn test
+  ```
 
 ---
  
