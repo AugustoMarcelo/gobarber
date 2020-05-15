@@ -5,3 +5,5 @@ ormconfig.json
 /**/tmp/*
 !/**/tmp/.gitkeep
 /**/.env
+
+/**/coverage
