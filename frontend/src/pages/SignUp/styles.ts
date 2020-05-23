@@ -46,6 +46,7 @@ export const AnimationContainer = styled.div`
     text-align: center;
 
     h1 {
+      font-size: 24px;
       margin-bottom: 24px;
     }
 
