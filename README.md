@@ -104,6 +104,8 @@ Nesta versão, foram aplicados padrões de arquitetura e boas práticas de progr
     - polished
     - react-spring
     - yup
+    - date-fns
+    - react-day-picker
 
   - **Mobile**
     - react-native
@@ -200,4 +202,8 @@ Nesta versão, foram aplicados padrões de arquitetura e boas práticas de progr
 *Páginas de Login e de Cadastro*
 
 <img src="https://user-images.githubusercontent.com/11545976/79991191-5e41a300-8488-11ea-9374-1a2a75278e75.gif" />
+
+*Páginas de Dashboard e Perfil*
+
+<img src="https://user-images.githubusercontent.com/11545976/82741895-98bf8980-9d2d-11ea-9a57-ebf7142f9ba7.gif" />
  
