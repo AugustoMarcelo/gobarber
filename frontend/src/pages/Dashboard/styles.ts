@@ -234,7 +234,8 @@ export const Calendar = styled.aside`
   .DayPicker-Month {
     border-collapse: separate;
     border-spacing: 8px;
-    margin: 16px;
+    margin: 0;
+    margin-bottom: 16px;
   }
 
   .DayPicker-Day {
@@ -266,5 +267,26 @@ export const Calendar = styled.aside`
     background: #ff9000 !important;
     border-radius: 10px;
     color: #232129 !important;
+  }
+
+  .DayPicker-NavButton {
+    top: 0.9rem;
+  }
+
+  .DayPicker-NavButton--prev {
+    margin-left: 1.5em;
+    right: auto;
+  }
+
+  .DayPicker-Caption {
+    text-align: center;
+    background: #3e3b47;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    div {
+      line-height: 50px;
+    }
   }
 `;
